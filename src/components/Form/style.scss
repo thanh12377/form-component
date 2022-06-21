@@ -1,0 +1,409 @@
+
+// Setup
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+figcaption,
+figure,
+main {
+    display: block;
+}
+figure {
+    margin: 1em 40px;
+}
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+b,
+strong {
+    font-weight: inherit;
+}
+b,
+strong {
+    font-weight: bolder;
+}
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+dfn {
+    font-style: italic;
+}
+mark {
+    background-color: #ff0;
+    color: #000;
+}
+small {
+    font-size: 80%;
+}
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sub {
+    bottom: -0.25em;
+}
+sup {
+    top: -0.5em;
+}
+audio,
+video {
+    display: inline-block;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+img {
+    border-style: none;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+}
+button,
+input {
+    overflow: visible;
+}
+button,
+select {
+    text-transform: none;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+progress {
+    display: inline-block;
+    vertical-align: baseline;
+}
+textarea {
+    overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+details,
+menu {
+    display: block;
+}
+summary {
+    display: list-item;
+}
+canvas {
+    display: inline-block;
+}
+template {
+    display: none;
+}
+[hidden] {
+    display: none;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: none 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: none 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: none 0.4s cubic-bezier(0.19, 1, 0.22, 1); /* Easing function = easeOutExpo */
+}
+
+html {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+body {
+    margin: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    font: 100%/1.2 "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font: 300 1.25em/1.1 "Georgia", "Helvetica Neue", "Helvetica", "Arial",
+        sans-serif;
+}
+
+a,
+button,
+input {
+    transition-property: color, border-color, background-color, opacity;
+}
+
+a {
+    outline: 0;
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    background: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+
+
+//**********************************************
+
+.main {
+    padding-top: 60px;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.ta-c {
+    text-align: center;
+}
+
+.container {
+    max-width: 840px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid {
+    margin-top: -15px;
+    margin-left: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid__block {
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.grid__block.full-- {
+    width: 100%;
+}
+
+@media (min-width: 480px) {
+    .grid {
+        margin-top: -20px;
+        margin-left: -20px;
+    }
+
+    .grid__block {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 640px) {
+    .grid__block {
+        width: 50%;
+    }
+}
+
+
+// Input style
+.field-label {
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.field-value {
+    font-weight: bold;
+}
+
+.field {
+    width: 100%;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+}
+
+.field-none{
+    display: none;
+}
+
+.field.invalid-- {
+    box-shadow: inset 0 0 0 1px #c00;
+    color: #c00;
+}
+
+textarea.field {
+    min-width: 100%;
+    max-width: 100%;
+    height: 6em;
+    min-height: 6em;
+    max-height: 12em;
+}
+
+.field-error {
+    margin-top: 5px;
+    display: none;
+    color: #c00;
+    font-size: 14px;
+}
+
+.field-error.active-- {
+    display: block;
+}
+
+@media (min-width: 480px) {
+    .field-label {
+        margin-bottom: 10px;
+    }
+
+    .field {
+        padding: 15px 20px;
+    }
+
+    .field-error {
+        margin-top: 10px;
+    }
+}
+
+//Button style
+.button {
+    width: 250px;
+    border-radius: 14px;
+    padding: 10px 15px;
+    display: inline-block;
+    background-color: #546e7a;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.button.secondary-- {
+    background-color: #43a047;
+}
+
+@media (min-width: 480px) {
+    .button {
+        padding: 15px 20px;
+    }
+}
+.unshow{
+    display: none;
+}
